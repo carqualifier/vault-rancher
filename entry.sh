@@ -4,7 +4,7 @@ set -e
 
 run_vault()
 {
-	exec /bin/vault/server -config=/config/consul.hcl
+	exec /bin/vault server -config=/config/consul.hcl
 }
 
 while [ ! -f "/config/consul.hcl" ]; do
