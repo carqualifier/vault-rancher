@@ -2,14 +2,14 @@
 
 set -e
 
-run_consul()
+run_vault()
 {
-	exec consul agent -config-file=/opt/rancher/config/server.json -data-dir=/var/consul
+	exec server -config=/config/consul.hcl
 }
 
-while [ ! -f "/opt/rancher/config/server.json" ]; do
+while [ ! -f "/config/consul.hcl" ]; do
 	sleep 1
 done
 
 sleep 5
-run_consul
+run_vault
