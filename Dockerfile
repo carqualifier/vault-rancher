@@ -1,4 +1,4 @@
-FROM gliderlabs/consul-agent:0.6
+FROM sjourdan/vault
 
 ADD entry.sh /entry.sh
 
