@@ -1,4 +1,4 @@
-FROM sjourdan/vault
+FROM cgswong/docker-vault:latest
 
 ADD entry.sh /entry.sh
 
